@@ -10,11 +10,13 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
+    // work with authorization
 @Configuration
 public class SecurityConfig {
 
     @Autowired
     private JwtAuthenticationEntryPoint point;
+
     @Autowired
     private JwtAuthenticationFilter filter;
 
